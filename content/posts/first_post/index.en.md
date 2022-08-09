@@ -7,5 +7,5 @@ draft: true
 
 There is a photo - can you see it?
 ![Alt text](./image.jpg "The image")
-
+Yay!
 
