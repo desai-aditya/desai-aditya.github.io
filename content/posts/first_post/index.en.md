@@ -2,7 +2,7 @@
 title: "First Post"
 date: 2022-08-08T21:20:54+05:30
 tags: ["draft"]
-draft: true
+draft: false
 ---
 
 There is a photo - can you see it?
