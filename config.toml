@@ -16,30 +16,42 @@ languageName = "English"
   name = "Aditya"
   email = "desaiadityapr@gmail.com"
   link = "/about/"
+  
+# Header config
+  [params.header]
+    # desktop header mode ["fixed", "normal", "auto"]
+    desktopMode = "fixed"
+    # mobile header mode ["fixed", "normal", "auto"]
+    mobileMode = "auto"
+    # Header title config
+    [params.header.title]
+      # URL of the LOGO
+      logo = ""
+      # title name
+      name = "Aditya Desai"
+      # you can add extra information before the name (HTML format is supported), such as icons
+      pre = ""
+      # you can add extra information after the name (HTML format is supported), such as icons
+      post = ""
+      # whether to use typeit animation for title name
+      typeit = true
 
 # search config
   [params.search]
     enable = true
     # type of search engine ["lunr", "algolia"]
-    # 搜索引擎的类型 ["lunr", "algolia"]
-    type = "algolia"
+    type = "lunr"
     # max index length of the chunked content
-    # 文章内容最长索引长度
     contentLength = 4000
     # placeholder of the search bar
-    # 搜索框的占位提示语
     placeholder = ""
     # max number of results length
-    # 最大结果数目
     maxResultLength = 10
     # snippet length of the result
-    # 结果内容片段长度
     snippetLength = 30
     # HTML tag name of the highlight part in results
-    # 搜索结果中高亮部分的 HTML 标签
     highlightTag = "em"
     # whether to use the absolute URL based on the baseURL in search index
-    # 是否在搜索索引中使用基于 baseURL 的绝对路径
     absoluteURL = false
     [params.search.algolia]
       index = ""
@@ -69,14 +81,6 @@ languageName = "English"
     title = ""
   [[menu.main]]
     weight = 3
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "Categories"
-    url = "/categories/"
-    title = ""
-  [[menu.main]]
-    weight = 4
     identifier = "about"
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
@@ -96,8 +100,30 @@ languageName = "English"
 
 # Home page config
   [params.home]
+    # amount of RSS pages
+    rss = 10
+    # Home page profile
     [params.home.profile]
+      enable = true
+      # Gravatar Email for preferred avatar in home page
+      gravatarEmail = ""
+      # URL of avatar shown in home page
+      avatarURL = ""
+      # title shown in home page (HTML format is supported)
+      title = ""
+      # subtitle shown in home page (HTML format is supported)
+      subtitle = "Welcome"
+      # whether to use typeit animation for subtitle
+      typeit = true
+      # whether to show social links
       social = false
+      # disclaimer (HTML format is supported)
+      disclaimer = ""
+    # Home page posts
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 1
 
 # Page global config
   [params.page]
